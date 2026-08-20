@@ -127,19 +127,42 @@ main section {
 
 /* hero section */
 .hero-section {
-  background-color: lightblue;
   height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-image: url("./images/hero-section/hero-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* position: relative;  */
+  /* overflow: hidden; Clips video outside section bounds */ 
 }
+
+
+
+
+/* Dark Tint Overlay */
+/* .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+} */
+
+
 .hero-intro {
   width: 750px;
   /* height: 490px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: pink;
+  z-index: 3; /* Keeps content above video and overlay */
 }
 .hero-section-heading {
   font-family: var(--primary-font-family);
@@ -160,10 +183,15 @@ main section {
   background-color: #c29843;
   color: var(--primary-color);
   transition: all 0.15s;
+  border: 2px solid #c29843;
+
+  
 }
 
 .explore-des-btn:hover {
-  background-color: #d4b880;
+  background-color: #d4b880; 
+  border: 2px solid #d4b880;
+
 }
 
 .view-tours-btn {
@@ -300,7 +328,6 @@ main section {
   font-size: var(--description-font-size);
   color: var(--accent-color);
 
-  flex-grow: 1;
 }
 
 .des-explore-btn {
@@ -363,7 +390,6 @@ main section {
   border-radius: 12px;
   border: 1px solid #b7b7b793;
   transition: all 0.3s;
-
  
   position: relative;
 }
@@ -439,7 +465,6 @@ main section {
   color: var(--description-color);
   line-height: 1.7;
 
-  flex-grow: 1;
 }
 
 .package-price-container {
@@ -494,11 +519,13 @@ main section {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  height: 100%;
   align-items: center;
   gap: 12px;
 
   transition: all 0.25s;
+
 }
 
 .qualification-card:hover {
@@ -975,6 +1002,17 @@ hr{
     flex-direction: column;
     width: 100%;
   }
+  
+  /* Make the <a> tag expand full width */
+  .hero-section-btns-container > a{
+    width: 100%;
+    display: block;
+  }
+  /* Make the <button> inside expand full width */
+  .hero-section-btns-container .btn{
+    width: 100%;
+  }
+
 
   /* popular destination */
   .section-title {

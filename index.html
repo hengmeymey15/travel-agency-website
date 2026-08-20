@@ -38,11 +38,17 @@
         <!-- navbar -->
         <nav class="navbar">
           <ul class="nav-items">
-            <li class="nav-link"><a href="#">Home</a></li>
-            <li class="nav-link"><a href="#">Destinations</a></li>
-            <li class="nav-link"><a href="#">Tours & Packages</a></li>
-            <li class="nav-link"><a href="#">About Us</a></li>
-            <li class="nav-link"><a href="#">Contact</a></li>
+            <li class="nav-link"><a href="./index.html">Home</a></li>
+            <li class="nav-link">
+              <a href="./pages/destinations.html">Destinations</a>
+            </li>
+            <li class="nav-link">
+              <a href="./pages/tours-and-packages.html">Tours & Packages</a>
+            </li>
+            <li class="nav-link">
+              <a href="./pages/about-us.html">About Us</a>
+            </li>
+            <li class="nav-link"><a href="./pages/contact.html">Contact</a></li>
           </ul>
         </nav>
 
@@ -58,6 +64,15 @@
     <main>
       <!-- hero section -->
       <section class="hero-section">
+        <!-- Background Video -->
+        <!-- <video class="hero-video" autoplay loop muted playsinline>
+          <source src="./videos/hero-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video> -->
+
+        <!-- Dark Overlay (optional, ensures text readability) -->
+        <!-- <div class="hero-overlay"></div> -->
+
         <div class="hero-intro">
           <h1 class="hero-section-heading">Discover the Beauty of Cambodia</h1>
           <p class="hero-section-text">
@@ -65,8 +80,14 @@
             and unforgettable Cambodian experiences.
           </p>
           <div class="hero-section-btns-container">
-            <button class="btn explore-des-btn">Explore Destinations</button>
-            <button class="btn view-tours-btn">View Tours</button>
+            <a href="./pages/destinations.html"
+              ><button class="btn explore-des-btn">
+                Explore Destinations
+              </button></a
+            >
+            <a href="./pages/tours-and-packages.html"
+              ><button class="btn view-tours-btn">View Tours</button></a
+            >
           </div>
         </div>
       </section>
@@ -88,11 +109,89 @@
         <!-- cards -->
         <div class="popular-card-container">
           <!-- card -->
-          <a href="#" class="des-card">
+          <a href="./pages/destinations.html" class="des-card">
+            <img
+              class="des-img"
+              src="./images/popular-destination/angkor-wat.png"
+              alt="Angkor Wat"
+            />
+            <div class="des-info-container">
+              <div class="des-title">
+                <span>Siem Reap</span>
+                <h3>Angkor Wat</h3>
+              </div>
+
+              <p class="des-description">
+                The world's largest religious monument, rising from the jungle
+                in timeless grandeur.
+              </p>
+
+              <div>
+                <button class="des-explore-btn">
+                  Explore <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="./pages/destinations.html" class="des-card">
+            <img
+              class="des-img"
+              src="./images/popular-destination/koh-rong.png"
+              alt="Koh Rong"
+            />
+            <div class="des-info-container">
+              <div class="des-title">
+                <span>Sihanoukville</span>
+                <h3>Koh Rong</h3>
+              </div>
+
+              <p class="des-description">
+                Crystal waters, white sand shores, and nights lit by
+                bioluminescent plankton.
+              </p>
+
+              <div>
+                <button class="des-explore-btn">
+                  Explore <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="./pages/destinations.html" class="des-card">
+            <img
+              class="des-img"
+              src="./images/popular-destination/kampot.png"
+              alt="Kampot"
+            />
+            <div class="des-info-container">
+              <div class="des-title">
+                <span>Southern Cambodia</span>
+                <h3>Kampot</h3>
+              </div>
+
+              <p class="des-description">
+                A riverside town of colonial streets, pepper farms, and
+                impossibly golden sunsets.
+              </p>
+
+              <div>
+                <button class="des-explore-btn">
+                  Explore <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="./pages/destinations.html" class="des-card">
             <img
               class="des-img"
               src="./images/popular-destination/mondulkiri.png"
-              alt="Angkor Wat"
+              alt="Mondulkiri"
             />
             <div class="des-info-container">
               <div class="des-title">
@@ -112,21 +211,49 @@
               </div>
             </div>
           </a>
-          <a href="#" class="des-card">
+
+          <!-- card -->
+          <a href="./pages/destinations.html" class="des-card">
             <img
               class="des-img"
-              src="./images/popular-destination/mondulkiri.png"
-              alt="Angkor Wat"
+              src="./images/popular-destination/phnom-penh.png"
+              alt="Phnom Penh"
             />
             <div class="des-info-container">
               <div class="des-title">
-                <span>Eastern Cambodia</span>
-                <h3>Mondulkiri</h3>
+                <span>Cambodia's Capital</span>
+                <h3>Phnom Penh</h3>
               </div>
 
               <p class="des-description">
-                Rolling highlands, elephant sanctuaries, and waterfalls hidden
-                in ancient forest.
+                A city of royal palaces, riverside energy, and a history that
+                must be understood.
+              </p>
+
+              <div>
+                <button class="des-explore-btn">
+                  Explore <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <!-- card -->
+          <a href="./pages/destinations.html" class="des-card">
+            <img
+              class="des-img"
+              src="./images/popular-destination/kep.png"
+              alt="Kep"
+            />
+            <div class="des-info-container">
+              <div class="des-title">
+                <span>Southern Cambodia</span>
+                <h3>Kep</h3>
+              </div>
+
+              <p class="des-description">
+                A sleepy seaside retreat famed for its crab market and
+                French-era architecture.
               </p>
 
               <div>
@@ -140,7 +267,7 @@
 
         <!-- view all destination button -->
         <div class="view-all-des-btn-container">
-          <a href="#"
+          <a href="./pages/destinations.html"
             ><button class="btn">
               View All Destinations
               <i class="fa-solid fa-arrow-right-long"></i></button
@@ -160,7 +287,7 @@
           </div>
           <!-- view all package -->
           <div class="section-description view-all-package-link">
-            <a href="#"
+            <a href="./pages/tours-and-packages.html"
               >View all packages <i class="fa-solid fa-arrow-right-long"></i
             ></a>
           </div>
@@ -168,6 +295,44 @@
 
         <!-- package cards -->
         <div class="package-cards-container">
+          <!-- package card -->
+          <div class="package-card">
+            <div class="package-img-container">
+              <img
+                src="./images/travel-package/angkor-wat.png"
+                alt="Angkor Explorer"
+              />
+            </div>
+
+            <!-- badge -->
+            <!-- <div class="badge">Beach</div> -->
+
+            <!-- package card header -->
+            <div class="package-info-container">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Siem Reap
+              </div>
+              <div class="package-header-info">
+                <h3>Angkor Explorer</h3>
+                <div>3 Days / 2 Nights</div>
+              </div>
+              <p class="package-description">
+                Witness the sunrise over Angkor Wat, wander through jungle-clad
+                Ta Prohm, and discover the faces of Bayon.
+              </p>
+              <div class="package-price-container">
+                <div class="price">$159 <span>/ person</span></div>
+                <div class="view-package-btn-container">
+                  <a href="./pages/tours-and-packages.html"
+                    ><button class="btn view-package-btn">
+                      View Package
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- package card -->
           <div class="package-card">
             <div class="package-img-container">
@@ -196,7 +361,7 @@
               <div class="package-price-container">
                 <div class="price">$119 <span>/ person</span></div>
                 <div class="view-package-btn-container">
-                  <a href="./pages/tours-and- packages.html"
+                  <a href="./pages/tours-and-packages.html"
                     ><button class="btn view-package-btn">
                       View Package
                     </button></a
@@ -206,6 +371,43 @@
             </div>
           </div>
 
+          <!-- package card -->
+          <div class="package-card">
+            <div class="package-img-container">
+              <img
+                src="./images/travel-package/mondulkiri.png"
+                alt="Mondulkiri Experience"
+              />
+            </div>
+
+            <!-- badge -->
+            <!-- <div class="badge">Beach</div> -->
+
+            <!-- package card header -->
+            <div class="package-info-container">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Mondulkir
+              </div>
+              <div class="package-header-info">
+                <h3>Mondulkiri Experience</h3>
+                <div>3 Days / 2 Nights</div>
+              </div>
+              <p class="package-description">
+                Ethical elephant encounters, hidden waterfalls, and nights under
+                a canopy of stars in the highlands.
+              </p>
+              <div class="package-price-container">
+                <div class="price">$129 <span>/ person</span></div>
+                <div class="view-package-btn-container">
+                  <a href="./pages/tours-and-packages.html"
+                    ><button class="btn view-package-btn">
+                      View Package
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -240,6 +442,63 @@
               <p>
                 Discover Cambodia through the knowledge of local travel experts
                 who know every hidden corner.
+              </p>
+            </div>
+          </div>
+
+          <!-- qualification card -->
+          <div class="qualification-card">
+            <!-- icon -->
+            <div class="q-icon-container">
+              <i class="fa-regular fa-square-check"></i>
+            </div>
+            <!-- title -->
+            <div class="q-title">
+              <h3>Carefully Designed Trips</h3>
+            </div>
+            <!-- description -->
+            <div class="q-description">
+              <p>
+                Every journey is thoughtfully planned for a meaningful,
+                memorable experience tailored to you.
+              </p>
+            </div>
+          </div>
+
+          <!-- qualification card -->
+          <div class="qualification-card">
+            <!-- icon -->
+            <div class="q-icon-container">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <!-- title -->
+            <div class="q-title">
+              <h3>Trusted Experiences</h3>
+            </div>
+            <!-- description -->
+            <div class="q-description">
+              <p>
+                We connect travelers with reliable local experiences vetted for
+                quality and authenticity.
+              </p>
+            </div>
+          </div>
+
+          <!-- qualification card -->
+          <div class="qualification-card">
+            <!-- icon -->
+            <div class="q-icon-container">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <!-- title -->
+            <div class="q-title">
+              <h3>24/7 Support</h3>
+            </div>
+            <!-- description -->
+            <div class="q-description">
+              <p>
+                We're here to help throughout your journey, every hour of every
+                day.
               </p>
             </div>
           </div>
@@ -377,6 +636,68 @@
               </div>
             </div>
           </div>
+
+          <!-- review card -->
+          <div class="review-card">
+            <!-- rating star -->
+            <div class="rating-container">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <!-- review text -->
+            <div class="review-text-container">
+              <p>
+                "Impeccably planned, not a single hiccup. We saw Cambodia
+                through local eyes and left with memories we'll carry forever."
+              </p>
+            </div>
+
+            <!-- customer profile -->
+            <div class="customer-container">
+              <div class="customer-picture">
+                <img src="./images/customers/c-2.png" alt="customer picture" />
+              </div>
+              <div class="customer-info">
+                <h4>James Harrington</h4>
+                <div>United Kingdom</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- review card -->
+          <div class="review-card">
+            <!-- rating star -->
+            <div class="rating-container">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <!-- review text -->
+            <div class="review-text-container">
+              <p>
+                "The Mondulkiri elephant experience was deeply moving. Angkor
+                Journey cares about sustainable tourism — and it shows."
+              </p>
+            </div>
+
+            <!-- customer profile -->
+            <div class="customer-container">
+              <div class="customer-picture">
+                <img src="./images/customers/c-3.png" alt="customer picture" />
+              </div>
+              <div class="customer-info">
+                <h4>Yuki Tanaka</h4>
+                <div>Japan</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -442,17 +763,23 @@
           <!-- social media -->
           <div class="social-media-container">
             <!-- facebook -->
-            <div class="social-media-icon facebook">
+            <a
+              href="https://www.facebook.com"
+              class="social-media-icon facebook"
+            >
               <i class="fa-brands fa-facebook-f"></i>
-            </div>
+            </a>
             <!-- instagram -->
-            <div class="social-media-icon instagram">
+            <a
+              href="https://www.instagram.com"
+              class="social-media-icon instagram"
+            >
               <i class="fa-brands fa-instagram"></i>
-            </div>
+            </a>
             <!-- tiktok -->
-            <div class="social-media-icon tiktok">
+            <a href="https://www.tiktok.com" class="social-media-icon tiktok">
               <i class="fa-brands fa-tiktok"></i>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -460,10 +787,20 @@
         <div class="footer-each-section explore-section">
           <h4>Explore</h4>
           <div class="footer-item explore-items">
-            <a class="footer-link explore-link" href="./pages/destinations.html">Destinations</a>
-            <a class="footer-link explore-link" href="./pages/tours-and-packages.html">Tours & Packages</a>
-            <a class="footer-link explore-link" href="./pages/about-us.html">About Us</a>
-            <a class="footer-link explore-link" href="./pages/contact.html">Contact</a>
+            <a class="footer-link explore-link" href="./pages/destinations.html"
+              >Destinations</a
+            >
+            <a
+              class="footer-link explore-link"
+              href="./pages/tours-and-packages.html"
+              >Tours & Packages</a
+            >
+            <a class="footer-link explore-link" href="./pages/about-us.html"
+              >About Us</a
+            >
+            <a class="footer-link explore-link" href="./pages/contact.html"
+              >Contact</a
+            >
           </div>
         </div>
 
@@ -471,12 +808,36 @@
         <div class="footer-each-section popular-des-section">
           <h4>Popular Destinations</h4>
           <div class="footer-item popular-des-items">
-            <a class="footer-link popular-des-link" href="./pages/destinations.html">Siem Reap</a>
-            <a class="footer-link popular-des-link" href="./pages/destinations.html">Koh Rong</a>
-            <a class="footer-link popular-des-link" href="./pages/destinations.html">Kampot </a>
-            <a class="footer-link popular-des-link" href="./pages/destinations.html">Mondulkiri</a>
-            <a class="footer-link popular-des-link" href="./pages/destinations.html">Kep</a>
-            <a class="footer-link popular-des-link" href="./pages/destinations.html">Phnom Penh</a>
+            <a
+              class="footer-link popular-des-link"
+              href="./pages/destinations.html"
+              >Siem Reap</a
+            >
+            <a
+              class="footer-link popular-des-link"
+              href="./pages/destinations.html"
+              >Koh Rong</a
+            >
+            <a
+              class="footer-link popular-des-link"
+              href="./pages/destinations.html"
+              >Kampot
+            </a>
+            <a
+              class="footer-link popular-des-link"
+              href="./pages/destinations.html"
+              >Mondulkiri</a
+            >
+            <a
+              class="footer-link popular-des-link"
+              href="./pages/destinations.html"
+              >Kep</a
+            >
+            <a
+              class="footer-link popular-des-link"
+              href="./pages/destinations.html"
+              >Phnom Penh</a
+            >
           </div>
         </div>
 
@@ -485,37 +846,46 @@
           <h4>Contact</h4>
           <div class="footer-item contact-items-info">
             <!-- address -->
-              <div class="contact-items">
-                <div class="contact-icons"><i class="fa-solid fa-location-dot"></i></div>
-                <a href="https://www.google.com/maps" target="_blank">Phnom Penh, Cambodia</a>
+            <div class="contact-items">
+              <div class="contact-icons">
+                <i class="fa-solid fa-location-dot"></i>
               </div>
+              <a href="https://www.google.com/maps" target="_blank"
+                >Phnom Penh, Cambodia</a
+              >
+            </div>
 
             <!-- phone number -->
-             <div class="contact-items">
-                <div class="contact-icons"><i class="fa-solid fa-phone"></i></div>
-                <a href="tel:+855 96 243 628">+855 96 243 628</a>
-              </div>
+            <div class="contact-items">
+              <div class="contact-icons"><i class="fa-solid fa-phone"></i></div>
+              <a href="tel:+855 96 243 628">+855 96 243 628</a>
+            </div>
 
             <!-- phone number -->
-             <div class="contact-items">
-                <div class="contact-icons"><i class="fa-solid fa-envelope"></i></div>
-                <a href="mailto:angkorjourney@gmail.com">angkorjourney@gmail.com</a>
+            <div class="contact-items">
+              <div class="contact-icons">
+                <i class="fa-solid fa-envelope"></i>
               </div>
+              <a href="mailto:angkorjourney@gmail.com"
+                >angkorjourney@gmail.com</a
+              >
+            </div>
           </div>
         </div>
       </div>
 
-      <hr>
+      <hr />
 
       <!-- copyright -->
       <div class="copyright-container">
-        <div class="copyright">&#169; 2026 Angkor Journey. All rights reserved.</div>
+        <div class="copyright">
+          &#169; 2026 Angkor Journey. All rights reserved.
+        </div>
         <div class="bottom-bar-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
         </div>
       </div>
-
     </footer>
   </body>
 </html>
