@@ -43,6 +43,7 @@
 header {
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 main section {
   padding: 0 var(--page-margin-y);
@@ -223,6 +224,112 @@ main section {
 
 
 
+/* popular destination cards */
+
+.popular-card-container{
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.des-card{
+  text-decoration: none;
+  /* background-color: lightblue; */
+  display: block;
+  /* width: 350px; */
+  height: 500px;
+  border-radius: 12px;
+
+  position: relative;
+
+  /* transition: all 0.3s; */
+
+  overflow: hidden; /* Clips the scaling image within the card */
+}
+
+/* .des-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+} */
+
+.des-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s; /* Smooth hover transition */
+}
+
+.des-card:hover .des-img{
+  transform: scale(1.08); /* Adjust zoom strength (e.g., 1.05 to 1.15) */
+}
+
+.des-info-container{
+  position: absolute;
+  bottom: 0;
+  padding: 15px 18px;
+  /* background-color: rgba(211, 211, 211, 0.667);
+  border-radius: 12px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.des-title > span{
+  font-family: var(--secondary-font-family);
+  font-weight: var(--section-label-font-weight);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: var(--accent-color);
+
+}
+
+.des-title > h3{
+  margin-top: 2px;
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.des-description{
+  font-family: var(--secondary-font-family);
+  font-size: var(--description-font-size);
+  color: var(--accent-color);
+
+  flex-grow: 1;
+}
+
+
+.des-explore-btn{
+  font-family: var(--secondary-font-family);
+  color: var(--secondary-color);
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.view-all-des-btn-container{
+  text-align: center;
+}
+
+.view-all-des-btn-container > a > button{
+  background-color: transparent;
+  border: 1.5px solid var(--primary-color);
+  color: var(--primary-color);
+  transition: all 0.25s;
+} 
+
+.view-all-des-btn-container > a:hover > button{
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+
+
 
 /* mobile <- */
 @media (max-width: 767px) {
@@ -273,6 +380,18 @@ main section {
   .section-title {
     font-size: 32px;
   }
+
+  /* destination card */
+  .popular-card-container{
+    padding: 20px 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .des-card{
+    height: 450px;
+  }
+
+
+
 }
 /* tablet ONLY (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
