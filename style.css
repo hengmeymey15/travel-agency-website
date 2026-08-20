@@ -871,6 +871,14 @@ main section {
     font-size: 50px;
   }
 
+  /* CTA section */
+  .cta-container{
+    padding: 120px 20px;
+  }
+
+  .cta-info{
+    width: 100%;
+  }
 
 
 }
