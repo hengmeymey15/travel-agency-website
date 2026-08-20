@@ -157,7 +157,7 @@ main section {
   gap: 10px;
 }
 .explore-des-btn {
-  background-color: #d4a953;
+  background-color: #c29843;
   color: var(--primary-color);
   transition: all 0.15s;
 }
@@ -726,6 +726,44 @@ main section {
   font-family: var(--secondary-font-family);
   color: #bac8c6;
   font-size: var(--description-font-size);
+}
+
+/* CTA section */
+.cta-container{
+  width: 100%;
+  padding: 120px 80px;
+  background-image: 
+    linear-gradient(
+      rgb(22, 74, 65, 0.70)
+    ),
+    url("./images/cta-img.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-info{
+  width: 650px;
+  text-align: center;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cta-info > h2 {
+  font-family: var(--primary-font-family);
+  font-size: 40px;
+  color: var(--accent-color);
+  line-height: 1.1;
+}
+
+.cta-info > p {
+  font-family: var(--secondary-font-family);
+  color: #ced5d0;
+  font-size: 14px;
 }
 
 /* mobile <- */
