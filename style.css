@@ -697,6 +697,37 @@ main section {
 }
 
 
+/* summarize section */
+.summarize-container{
+  background-color: var(--primary-color);
+}
+
+.summarize-items{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 25px;
+}
+
+.sum-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sum-item > div {
+  font-family: var(--primary-font-family);
+  color: var(--secondary-color);
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.sum-item > span {
+  font-family: var(--secondary-font-family);
+  color: #bac8c6;
+  font-size: var(--description-font-size);
+}
+
 /* mobile <- */
 @media (max-width: 767px) {
   .navbar-container {
@@ -793,6 +824,16 @@ main section {
   }
   
 
+  /* summarize section */
+  .summarize-items{
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+  }
+  .sum-item > div {
+    font-size: 50px;
+  }
+
+
 
 }
 /* tablet ONLY (768px to 1023px) */
@@ -863,6 +904,12 @@ main section {
     /* reviews */
   .review-cards-container{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+    /* summarize section */
+  .summarize-items{
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
   }
 
 }
