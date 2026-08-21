@@ -6,11 +6,12 @@
     <title>Angkor Journey</title>
     <!-- style.css -->
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/destinations.css" />
     <link rel="stylesheet" href="../css/tours-and-packages.css" />
     <!-- website-logo -->
     <link
       rel="shortcut icon"
-      href="./images/favicon-logo.png"
+      href="../images/favicon-logo.png"
       type="image/x-icon"
     />
     <!-- font-awesome cdn -->
@@ -66,31 +67,178 @@
     <!-- main -->
     <main>
       <!-- hero section -->
-      <section class="hero-section">
-        <!-- Background Video -->
-        <!-- <video class="hero-video" autoplay loop muted playsinline>
-          <source src="./videos/hero-bg.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> -->
+      <section class="hero-section page-hero-section">
+        <div class="page-info">
+          <span class="section-label page-label">Curated Experiences</span>
+          <h2 class="section-title page-hero-heading">Tours & Packages</h2>
+        </div>
+      </section>
 
-        <!-- Dark Overlay (optional, ensures text readability) -->
-        <!-- <div class="hero-overlay"></div> -->
+      <!-- filter category section -->
+      <section class="categories-section">
+        <div class="categories-container">
+          <!-- All category -->
+          <div class="category all-category">
+            <a href="#" class="btn active">All</a>
+          </div>
+          <!-- Culture category -->
+          <div class="category all-category">
+            <a href="#" class="btn">Culture</a>
+          </div>
+          <!-- Beach category -->
+          <div class="category all-category">
+            <a href="#" class="btn">Beach</a>
+          </div>
+          <!-- Nature category -->
+          <div class="category all-category">
+            <a href="#" class="btn">Nature</a>
+          </div>
+          <!-- Adventure category -->
+          <div class="category all-category">
+            <a href="#" class="btn">Adventure</a>
+          </div>
+          <!-- City category -->
+          <div class="category all-category">
+            <a href="#" class="btn">City</a>
+          </div>
+        </div>
+      </section>
 
-        <div class="hero-intro">
-          <h1 class="hero-section-heading">Discover the Beauty of Cambodia</h1>
-          <p class="hero-section-text">
-            Explore ancient temples, tropical islands, breathtaking landscapes,
-            and unforgettable Cambodian experiences.
+      <!-- main travel & package card section -->
+      <section class="section main-des-card-section main-package-card-section">
+        <div class="package-cards-container page-cards-container">
+          <!-- package card -->
+          <div class="package-card general-card">
+            <div class="package-img-container">
+              <img
+                src="../images/popular-destination/angkor-wat.png"
+                alt="Angkor Wat"
+              />
+            </div>
+
+            <!-- badge -->
+            <div class="badge package-badge">Culture</div>
+
+            <!-- package card header -->
+            <div
+              class="package-info-container general-card-info-container package-card-info-container"
+            >
+              <div class="location package-card-location">
+                <div class="address">
+                  <i class="fa-solid fa-location-dot"></i> Siem Reap
+                </div>
+                <div class="schedule">
+                  <i class="fa-solid fa-calendar"></i> 3 Days / 2 Nights
+                </div>
+              </div>
+              <div class="package-header-info">
+                <h3>Angkor Wat</h3>
+                <!-- <div>3 Days / 2 Nights</div> -->
+              </div>
+              <p class="package-description">
+                The world's largest religious monument, rising from the jungle
+                in timeless grandeur. A sunrise here is a rite of passage.
+              </p>
+
+              <div class="places-to-visit-container responsible">
+                <span class="btn"><i class="fa-solid fa-check"></i> Hotel</span>
+                <span class="btn"><i class="fa-solid fa-check"></i> Guide</span>
+                <span class="btn"
+                  ><i class="fa-solid fa-check"></i> Transport</span
+                >
+              </div>
+
+              <div class="package-price-container">
+                <div class="price">$129 <span>/ person</span></div>
+                <div class="view-package-btn-container">
+                  <a href="./about-us.html"
+                    ><button class="btn view-package-btn">
+                      View Package
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- most popular package -->
+      <section class="section story-container">
+        <!-- img -->
+        <div class="story-img package-img">
+          <img src="../images/our-story.png" alt="Our most popular package" />
+          <div class="most-popular-label"></div>
+        </div>
+
+        <!-- package part -->
+        <div class="story-info-container package-info-container">
+          <!-- header -->
+          <div class="section-header-container story-title-container">
+            <span class="section-label story-label"
+              >Signature Package</span
+            >
+            <h2 class="section-title story-header-title package-header-title">
+              Cambodia Grand Tour
+            </h2>
+          </div>
+
+          <!-- story-text -->
+          <div class="story-text package-text">
+            <p class="text-1">
+              Ten days. The whole country. Angkor's temples at dawn, islands at
+              midday, highland elephants at dusk. Our most comprehensive tour is
+              designed for travelers who want to truly know Cambodia — not just
+              visit it.
+            </p>
+
+            <!-- detial card -->
+            <div class="text-2 popular-package-detail">
+              <!-- detail -->
+              <div class="detail-card">
+                <h4>10 Days</h4>
+                <span>Duration</span>
+              </div>
+              <!-- detail -->
+              <div class="detail-card">
+                <h4>5 Cities</h4>
+                <span>Destinations</span>
+              </div>
+              <!-- detail -->
+              <div class="detail-card">
+                <h4>$599</h4>
+                <span>From</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- discover our story btn -->
+          <div class="discover-story-btn-container">
+            <a href="./about-us.html"
+              ><button class="btn discover-story">
+                Book This Journey
+                <i class="fa-solid fa-arrow-right"></i></button
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA(call to action) section -->
+      <section class="cta-container package-cta-section">
+        <!-- CTA info -->
+        <div class="cta-info">
+          <h2>Can't Find the Right Package?</h2>
+          <p>
+            Every traveler is different. Tell us your dates, interests, and
+            budget — our experts will craft a custom itinerary just for you.
           </p>
-          <div class="hero-section-btns-container">
-            <a href="./destinations.html"
-              ><button class="btn explore-des-btn">
-                Explore Destinations
-              </button></a
-            >
-            <a href="tours-and-packages.html"
-              ><button class="btn view-tours-btn">View Tours</button></a
-            >
+          <div class="cta-btn-container">
+            <a href="./pages/contact.html"
+              ><button class="btn explore-des-btn cta-btn">
+                Request a Custom Tour
+                <i class="fa-solid fa-arrow-right"></i></button
+            ></a>
           </div>
         </div>
       </section>
@@ -145,9 +293,7 @@
             <a class="footer-link explore-link" href="./destinations.html"
               >Destinations</a
             >
-            <a
-              class="footer-link explore-link"
-              href="tours-and-packages.html"
+            <a class="footer-link explore-link" href="tours-and-packages.html"
               >Tours & Packages</a
             >
             <a class="footer-link explore-link" href="./about-us.html"
@@ -163,34 +309,22 @@
         <div class="footer-each-section popular-des-section">
           <h4>Popular Destinations</h4>
           <div class="footer-item popular-des-items">
-            <a
-              class="footer-link popular-des-link"
-              href="./destinations.html"
+            <a class="footer-link popular-des-link" href="./destinations.html"
               >Siem Reap</a
             >
-            <a
-              class="footer-link popular-des-link"
-              href="./destinations.html"
+            <a class="footer-link popular-des-link" href="./destinations.html"
               >Koh Rong</a
             >
-            <a
-              class="footer-link popular-des-link"
-              href="./destinations.html"
+            <a class="footer-link popular-des-link" href="./destinations.html"
               >Kampot
             </a>
-            <a
-              class="footer-link popular-des-link"
-              href="./destinations.html"
+            <a class="footer-link popular-des-link" href="./destinations.html"
               >Mondulkiri</a
             >
-            <a
-              class="footer-link popular-des-link"
-              href="./destinations.html"
+            <a class="footer-link popular-des-link" href="./destinations.html"
               >Kep</a
             >
-            <a
-              class="footer-link popular-des-link"
-              href="./destinations.html"
+            <a class="footer-link popular-des-link" href="./destinations.html"
               >Phnom Penh</a
             >
           </div>
