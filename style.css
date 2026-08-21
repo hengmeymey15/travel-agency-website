@@ -396,7 +396,7 @@ main section {
 
 
 /* --- badge --- */
-/* .badge{
+.badge{
   position: absolute;
   top: 12px;
   left: 12px;
@@ -406,10 +406,10 @@ main section {
   text-transform: uppercase;
   color: var(--primary-color);
   letter-spacing: 1px;
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
   padding: 4px 12px;
   border-radius: 25px;
-} */
+}
 
 .package-card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

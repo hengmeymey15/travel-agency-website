@@ -10,7 +10,7 @@
     <!-- website-logo -->
     <link
       rel="shortcut icon"
-      href="./images/favicon-logo.png"
+      href="../images/favicon-logo.png"
       type="image/x-icon"
     />
     <!-- font-awesome cdn -->
@@ -66,31 +66,362 @@
     <!-- main -->
     <main>
       <!-- hero section -->
-      <section class="hero-section">
-        <!-- Background Video -->
-        <!-- <video class="hero-video" autoplay loop muted playsinline>
-          <source src="./videos/hero-bg.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> -->
+      <section class="hero-section page-hero-section">
+        <div class="page-info">
+          <span class="section-label page-label">Explore Cambodia</span>
+          <h2 class="section-title page-hero-heading">Our Destinations</h2>
+        </div>
+      </section>
 
-        <!-- Dark Overlay (optional, ensures text readability) -->
-        <!-- <div class="hero-overlay"></div> -->
+      <!-- filter category section -->
+      <section class="categories-section">
+        <div class="categories-container">
+          <!-- All category -->
+          <div class="category all-category">
+            <a href="#" class="btn active">All</a>
+          </div>
+          <!-- Culture category -->
+          <div class="category all-category">
+            <a href="#" class="btn">Culture</a>
+          </div>
+          <!-- Beach category -->
+          <div class="category all-category">
+            <a href="#" class="btn">Beach</a>
+          </div>
+          <!-- Nature category -->
+          <div class="category all-category">
+            <a href="#" class="btn">Nature</a>
+          </div>
+          <!-- Adventure category -->
+          <div class="category all-category">
+            <a href="#" class="btn">Adventure</a>
+          </div>
+        </div>
+      </section>
 
-        <div class="hero-intro">
-          <h1 class="hero-section-heading">Discover the Beauty of Cambodia</h1>
-          <p class="hero-section-text">
-            Explore ancient temples, tropical islands, breathtaking landscapes,
-            and unforgettable Cambodian experiences.
+      <!-- main destination card section -->
+      <section class="section main-des-card-section">
+        <div class="package-cards-container page-cards-container">
+          <!-- package card -->
+          <div class="package-card general-card">
+            <div class="package-img-container">
+              <img
+                src="../images/popular-destination/angkor-wat.png"
+                alt="Angkor Wat"
+              />
+            </div>
+
+            <!-- badge -->
+            <div class="badge">Culture</div>
+
+            <!-- package card header -->
+            <div class="package-info-container general-card-info-container">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Siem Reap
+              </div>
+              <div class="package-header-info">
+                <h3>Angkor Wat</h3>
+                <!-- <div>3 Days / 2 Nights</div> -->
+              </div>
+              <p class="package-description">
+                The world's largest religious monument, rising from the jungle
+                in timeless grandeur. A sunrise here is a rite of passage.
+              </p>
+
+              <div class="places-to-visit-container">
+                <span class="btn">UNESCO</span>
+                <span class="btn">Temples</span>
+                <span class="btn">Sunrise</span>
+              </div>
+
+              <div class="plan-visit-link">
+                <a class="btn" href="../pages/about-us.html"
+                  >Plan a visit <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- package card -->
+          <div class="package-card general-card">
+            <div class="package-img-container">
+              <img
+                src="../images/popular-destination/koh-rong.png"
+                alt="Koh Rong"
+              />
+            </div>
+
+            <!-- badge -->
+            <div class="badge">Beach</div>
+
+            <!-- package card header -->
+            <div class="package-info-container general-card-info-container">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Sihanoukville
+              </div>
+              <div class="package-header-info">
+                <h3>Koh Rong</h3>
+                <!-- <div>3 Days / 2 Nights</div> -->
+              </div>
+              <p class="package-description">
+                Crystal waters, white sand, and nights lit by bioluminescent
+                plankton. The island escape Cambodia keeps to itself.
+              </p>
+
+              <div class="places-to-visit-container">
+                <span class="btn">Island</span>
+                <span class="btn">Snorkeling</span>
+                <span class="btn">Nightlife</span>
+              </div>
+
+              <div class="plan-visit-link">
+                <a class="btn" href="../pages/about-us.html"
+                  >Plan a visit <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- package card -->
+          <div class="package-card general-card">
+            <div class="package-img-container">
+              <img src="../images/popular-destination/kampot.png" alt="Kampot" />
+            </div>
+
+            <!-- badge -->
+            <div class="badge">Nature</div>
+
+            <!-- package card header -->
+            <div class="package-info-container general-card-info-container">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Southern Cambodia
+              </div>
+              <div class="package-header-info">
+                <h3>Kampot</h3>
+                <!-- <div>3 Days / 2 Nights</div> -->
+              </div>
+              <p class="package-description">
+                Colonial streets, pepper farms, and sunsets behind Bokor
+                Mountain. Quiet, beautiful, and entirely its own.
+              </p>
+
+              <div class="places-to-visit-container">
+                <span class="btn">Riverside</span>
+                <span class="btn">Pepper</span>
+                <span class="btn">Cycling</span>
+              </div>
+
+              <div class="plan-visit-link">
+                <a class="btn" href="../pages/about-us.html"
+                  >Plan a visit <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- package card -->
+          <div class="package-card general-card">
+            <div class="package-img-container">
+              <img src="../images/popular-destination/mondulkiri.png" alt="Mondulkiri" />
+            </div>
+
+            <!-- badge -->
+            <div class="badge">Adventure</div>
+
+            <!-- package card header -->
+            <div class="package-info-container general-card-info-container">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Eastern Cambodia
+              </div>
+              <div class="package-header-info">
+                <h3>Mondulkiri</h3>
+                <!-- <div>3 Days / 2 Nights</div> -->
+              </div>
+              <p class="package-description">
+                Rolling green highlands, ethical elephant sanctuaries, and
+                waterfalls far from any tourist trail.
+              </p>
+
+              <div class="places-to-visit-container">
+                <span class="btn">Elephants</span>
+                <span class="btn">Trekking</span>
+                <span class="btn">Wildlife</span>
+              </div>
+
+              <div class="plan-visit-link">
+                <a class="btn" href="../pages/about-us.html"
+                  >Plan a visit <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- package card -->
+          <div class="package-card general-card">
+            <div class="package-img-container">
+              <img src="../images/popular-destination/kep.png" alt="Kep" />
+            </div>
+
+            <!-- badge -->
+            <div class="badge">Beach</div>
+
+            <!-- package card header -->
+            <div class="package-info-container general-card-info-container">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Southern Cambodia
+              </div>
+              <div class="package-header-info">
+                <h3>Kep</h3>
+                <!-- <div>3 Days / 2 Nights</div> -->
+              </div>
+              <p class="package-description">
+                A sleepy seaside town famed for its crab market, French-era
+                villas, and serene Rabbit Island day trips.
+              </p>
+
+              <div class="places-to-visit-container">
+                <span class="btn">Seafood</span>
+                <span class="btn">Beaches</span>
+                <span class="btn">History</span>
+              </div>
+
+              <div class="plan-visit-link">
+                <a class="btn" href="../pages/about-us.html"
+                  >Plan a visit <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- package card -->
+          <div class="package-card general-card">
+            <div class="package-img-container">
+              <img src="../images/popular-destination/phnom-penh.png" alt="Phnom Penh" />
+            </div>
+
+            <!-- badge -->
+            <div class="badge">Culture</div>
+
+            <!-- package card header -->
+            <div class="package-info-container general-card-info-container">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Cambodia's Capital
+              </div>
+              <div class="package-header-info">
+                <h3>Phnom Penh</h3>
+                <!-- <div>3 Days / 2 Nights</div> -->
+              </div>
+              <p class="package-description">
+                A city of royal palaces, bustling riverside promenades, and a
+                complex history that deserves to be understood.
+              </p>
+
+              <div class="places-to-visit-container">
+                <span class="btn">Capital</span>
+                <span class="btn">Palaces</span>
+                <span class="btn">Museums</span>
+              </div>
+
+              <div class="plan-visit-link">
+                <a class="btn" href="../pages/about-us.html"
+                  >Plan a visit <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- package card -->
+          <div class="package-card general-card">
+            <div class="package-img-container">
+              <img
+                src="../images/destinations/sihanoukville.png"
+                alt="Sihanoukville"
+              />
+            </div>
+
+            <!-- badge -->
+            <div class="badge">Beach</div>
+
+            <!-- package card header -->
+            <div class="package-info-container general-card-info-container">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Southern Coast
+              </div>
+              <div class="package-header-info">
+                <h3>Sihanoukville</h3>
+                <!-- <div>3 Days / 2 Nights</div> -->
+              </div>
+              <p class="package-description">
+                The gateway to Cambodia's islands, with coastal energy and some
+                of Southeast Asia's most accessible diving.
+              </p>
+
+              <div class="places-to-visit-container">
+                <span class="btn">Diving</span>
+                <span class="btn">Islands</span>
+                <span class="btn">Coast</span>
+              </div>
+
+              <div class="plan-visit-link">
+                <a class="btn" href="../pages/about-us.html"
+                  >Plan a visit <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- package card -->
+          <div class="package-card general-card">
+            <div class="package-img-container">
+              <img src="../images/destinations/kratie.png" alt="Kratie" />
+            </div>
+
+            <!-- badge -->
+            <div class="badge">Nature</div>
+
+            <!-- package card header -->
+            <div class="package-info-container general-card-info-container">
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Mekong River
+              </div>
+              <div class="package-header-info">
+                <h3>Kratie</h3>
+                <!-- <div>3 Days / 2 Nights</div> -->
+              </div>
+              <p class="package-description">
+                Spot rare Irrawaddy dolphins in the Mekong at dusk, then cycle
+                through villages as the sun melts into the river.
+              </p>
+
+              <div class="places-to-visit-container">
+                <span class="btn">Dolphins</span>
+                <span class="btn">Mekong</span>
+                <span class="btn">Cycling</span>
+              </div>
+
+              <div class="plan-visit-link">
+                <a class="btn" href="../pages/about-us.html"
+                  >Plan a visit <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA section -->
+      <section class="cta-container">
+        <!-- CTA info -->
+        <div class="cta-info">
+          <h2>Ready to Choose Your Destination?</h2>
+          <p>
+            Let our local experts help you plan the perfect Cambodian itinerary.
           </p>
-          <div class="hero-section-btns-container">
-            <a href="destinations.html"
-              ><button class="btn explore-des-btn">
-                Explore Destinations
-              </button></a
-            >
-            <a href="./tours-and-packages.html"
-              ><button class="btn view-tours-btn">View Tours</button></a
-            >
+          <div class="cta-btn-container">
+            <a href="./pages/contact.html"
+              ><button class="btn explore-des-btn cta-btn">
+                Plan Your Trip <i class="fa-solid fa-arrow-right"></i></button
+            ></a>
           </div>
         </div>
       </section>
