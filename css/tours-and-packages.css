@@ -29,6 +29,22 @@
 }
 
 
+.tours-hero-section{
+      background-image:
+    linear-gradient(
+      to bottom,
+      rgba(242, 241, 237, 0.4) 0%,
+      rgba(22, 74, 65, 0.3) 20%,
+      rgba(22, 74, 65, 1) 100%
+    ),
+    url("../images/hero-section/tours-hero-section.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 .package-card-info-container{
     gap: 18px;
 }
@@ -56,8 +72,15 @@
 /* most popular package */
 
 
+
 .package-img{
     position: relative;
+}
+
+.popluar-package-card{
+    border: 3px solid var(--secondary-color);
+    border-radius: 14px;
+
 }
 
 .most-popular-label{
