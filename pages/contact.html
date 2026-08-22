@@ -6,11 +6,12 @@
     <title>Angkor Journey</title>
     <!-- style.css -->
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/destinations.css" />
     <link rel="stylesheet" href="../css/contact.css" />
     <!-- website-logo -->
     <link
       rel="shortcut icon"
-      href="./images/favicon-logo.png"
+      href="../images/favicon-logo.png"
       type="image/x-icon"
     />
     <!-- font-awesome cdn -->
@@ -66,32 +67,216 @@
     <!-- main -->
     <main>
       <!-- hero section -->
-      <section class="hero-section">
-        <!-- Background Video -->
-        <!-- <video class="hero-video" autoplay loop muted playsinline>
-          <source src="./videos/hero-bg.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> -->
+      <section class="hero-section page-hero-section">
+        <div class="page-info">
+          <span class="section-label page-label">Get in Touch</span>
+          <h2 class="section-title page-hero-heading">Plan Your Trip</h2>
+        </div>
+      </section>
 
-        <!-- Dark Overlay (optional, ensures text readability) -->
-        <!-- <div class="hero-overlay"></div> -->
-
-        <div class="hero-intro">
-          <h1 class="hero-section-heading">Discover the Beauty of Cambodia</h1>
-          <p class="hero-section-text">
-            Explore ancient temples, tropical islands, breathtaking landscapes,
-            and unforgettable Cambodian experiences.
-          </p>
-          <div class="hero-section-btns-container">
-            <a href="./destinations.html"
-              ><button class="btn explore-des-btn">
-                Explore Destinations
-              </button></a
-            >
-            <a href="./tours-and-packages.html"
-              ><button class="btn view-tours-btn">View Tours</button></a
-            >
+      <!-- contact us section -->
+      <section class="section story-container contact-section">
+        <!-- location part -->
+        <div class="story-info-container our-location-section">
+          <!-- header -->
+          <div class="section-header-container story-title-container">
+            <span class="section-label story-label">Contact Information</span>
+            <h2 class="section-title story-header-title">
+              Let's Start Planning
+            </h2>
           </div>
+
+          <!-- story-text -->
+          <div class="story-text">
+            <p class="text-1">
+              Whether you have a destination in mind or just a dream, our local
+              experts are here to turn it into a journey you'll never forget.
+            </p>
+
+            <div class="our-location-container">
+              <!-- location cards container -->
+              <div class="location-card-container">
+                <!-- card -->
+                <div class="location-card">
+                  <!-- icon -->
+                  <div class="location-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+
+                  <!-- text -->
+                  <div class="location-info-conatainer">
+                    <div class="info-text info-label">Office</div>
+                    <div class="info-section">
+                      <h4>Phnom Penh, Cambodia</h4>
+                      <p class="info-text info-description">
+                        Sangkat Tonle Bassac, Khan Chamkarmon
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card -->
+                <div class="location-card">
+                  <!-- icon -->
+                  <div class="location-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+
+                  <!-- text -->
+                  <div class="location-info-conatainer">
+                    <div class="info-text info-label">Phone</div>
+                    <div class="info-section">
+                      <h4>+855 96 243 628</h4>
+                      <p class="info-text info-description">
+                        Mon - Sat, 8am - 6pm (ICT)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card -->
+                <div class="location-card">
+                  <!-- icon -->
+                  <div class="location-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+
+                  <!-- text -->
+                  <div class="location-info-conatainer">
+                    <div class="info-text info-label">Email</div>
+                    <div class="info-section">
+                      <h4>angkorjourney@gmail.com</h4>
+                      <p class="info-text info-description">
+                        We reply within 24 hours
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="office-img">
+            <img src="../images/our-office.png" alt="our office" />
+            <div class="base-office">
+              <h4>Phnom Penh, Cambodia</h4>
+              <div class="info-text">Our office base</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- plan trip form -->
+        <div class="form-container">
+          <h3 class="section-title form-name">Tell Us About Your Trip</h3>
+          
+          <form class="plan-trip-form">
+            <!-- input row -->
+            <div class="input-row-container">
+              <div class="input-field-container">
+                <label for="fullname" class="input-label">Full Name</label>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="John Riyan"
+                />
+              </div>
+              <div class="input-field-container">
+                <label for="email" class="input-label">Email</label>
+                <input
+                  class="input-field"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="riyan@gmail.com"
+                />
+              </div>
+            </div>
+
+            <!-- input row -->
+            <div class="input-row-container">
+              <div class="input-field-container">
+                <label for="phone" class="input-label">Phone Number</label>
+                <input
+                  class="input-field"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="+855 962 231 445"
+                />
+              </div>
+              <div class="input-field-container">
+                <label for="traveller" class="input-label"
+                  >Number of Travelers</label
+                >
+                <input
+                  class="input-field"
+                  type="number"
+                  name="traveller"
+                  id="traveller"
+                  placeholder="8"
+                />
+              </div>
+            </div>
+
+            <!-- input row -->
+            <div class="input-row-container">
+              <!-- select option -->
+              <div class="input-field-container">
+                <label for="destination" class="input-label">Destination</label>
+                <select class="input-field" name="destination" id="destination">
+                  <option value="select-sestination">Select Destination</option>
+                  <option value="sr">Siemp Reap / Angkor Wat</option>
+                  <option value="koh-rong">Koh Rong</option>
+                  <option value="kampot">Kampot</option>
+                  <option value="mondulkiri">Mondulkiri</option>
+                  <option value="kep">Kep</option>
+                  <option value="pp">Phnom Penh</option>
+                  <option value="multiple-destinations">
+                    Multiple Destinations
+                  </option>
+                </select>
+              </div>
+
+              <div class="input-field-container">
+                <label for="travel-date" class="input-label"
+                  >Travel Dates</label
+                >
+                <input
+                  class="input-field"
+                  type="date"
+                  name="travel-date"
+                  id="travel-date"
+                />
+              </div>
+            </div>
+
+            <!-- input row -->
+            <div class="input-row-container">
+              <div class="input-field-container">
+                <label for="message" class="input-label">Your Message</label>
+                <textarea
+                  class="input-field"
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Tell us about your dream Cambodia trip - what you'd love to see, your pace of travel, any special requests ..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- btn -->
+            <div class="submit-btn-row">
+              <button class="btn submit-btn" type="submit">Send My Enquriry <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </form>
+
+          <div class="noted">
+            We'll respond within 24 hours. No spam, ever.
+          </div>
+          
+
         </div>
       </section>
     </main>
